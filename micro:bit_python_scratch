@@ -2,8 +2,9 @@ import serial
 from time import sleep
 import scratch
 
-scr = scratch.Scratch()
-## THE NEXT LINE MIGHT NEED TO BE CHANGED - TYPE ls /dev/ttyA* into the terminal to see which port is needed.
+scr = scratch.Scratch()'
+##  - Achtung! Hier musst du den Port herausfinden. Im Terminal ls /dev/ttyA*
+## zuerst ohne Microbit, dann mit
 PORT = "/dev/ttyACM1"
 ## 
 BAUD = 115200
